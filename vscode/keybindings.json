@@ -1,0 +1,47 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Activity Bar
+    {
+        "command": "workbench.view.explorer",
+        "key": "cmd+e",
+    },
+    {
+        "command": "workbench.view.debug",
+        "key": "cmd+d"
+    },
+
+    // Terminal
+    {
+        "command": "workbench.action.terminal.toggleTerminal",
+        "key": "cmd+shift+t",
+        "when": "terminal.active"
+    },
+    {
+        "command": "workbench.action.terminal.new",
+        "key": "cmd+shift+n",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "command": "workbench.action.terminal.focusNext",
+        "key": "cmd+shift+right",
+        "when": "terminalFocus"
+    },
+    {
+        "command": "workbench.action.terminal.focusPrevious",
+        "key": "cmd+shift+left",
+        "when": "terminalFocus"
+    },
+    {
+        "command": "workbench.action.terminal.kill",
+        "key": "cmd+shift+c",
+        "when": "terminalFocus"
+    },
+
+    // Neovim
+    {
+        "command": "vscode-neovim.compositeEscape1",
+        "key": "j",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert && neovim.init && neovim.mode == 'insert'",
+        "args": "j" 
+    },
+]
